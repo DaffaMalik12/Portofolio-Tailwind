@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="dist/img/typography.jpeg">
     <link rel="stylesheet" href="dist/output.css">
-  
+    <style>
+    </style>
     <title>Website Portofolio</title>
 </head>
 <body>
     <!-- Header Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex
     items-center z-10" data-aos="fade-down">
-    <div class="container">
+    <div class="container overflow-x-hidden">
         <div class="flex items-center justify-between relative">
             <div class="px-4 flex">
                 <img src="dist/img/typography.jpeg" alt="" class="w-20 p-4 rounded-full">
@@ -28,6 +29,7 @@
                     <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                 </button>
 
+                <!-- Navbar -->
                 <nav id="nav-menu" class="hidden absolute py-5 bg-white
                 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full 
                 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
@@ -69,14 +71,15 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2" data-aos="fade-right">
-                    <h1 class="text-base font-semibold text-orange-400 md:text-xl lg:text-2xl">Halo Semua 👋, Saya <span class="font-bold block text-slate-900
-                        text-4xl mt-1 lg:text-5xl">Muhammad Daffa</span></h1>
-                    <h2 class="font-medium text-slate-500 text-lg mb-5 md:text-xl lg:text-2xl">Student & 
-                        <span class="text-dark md:text-xl lg:text-2xl">Front End Web</span></h2>
-                    <p class="font-medium text-slate-400 mb-10 leading-relaxed  md:text-lg lg:text-xl">Mahasiswa Angkatan 2022 UIN JAKARTA <br> <span class="text-dark font-medium">Teknik Informatika</span></p>
-
+                    <h1 class="text-base font-semibold text-orange-400 md:text-xl lg:text-2xl">Halo Semua 👋, Saya <br><span id="typing"  class="font-bold text-slate-900
+                        text-4xl mt-1 lg:text-5xl"></span></h1>
+                    <!-- <h2 class="font-medium text-slate-500 text-lg mb-5 md:text-xl lg:text-2xl">Student & 
+                        <span class="text-dark md:text-xl lg:text-2xl">Front End Web</span></h2> -->
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed mt-5  md:text-lg lg:text-xl">Mahasiswa Angkatan 2022 UIN JAKARTA <br> <span class="text-dark font-medium">Teknik Informatika</span></p>
+                        <div class="info-popup">
                         <a href="#" class="text-base font-semibold text-white bg-orange-400 py-3 px-8 rounded-full
                         hover:shadow-lg hover:opacity-90 ease-in-out">Hubungi Saya</a>
+                        </div>
                 </div>
                 <div class="w-full px-4 self-end lg:w-1/2" data-aos="fade-left">
                     <div class="relative mt-10 lg:mt-0 lg:right-0">
@@ -177,17 +180,22 @@
         <div class="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           <div class="space-y-4" data-aos="zoom-in-right">
             <span
-              class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-700-300  dark:bg-gray-700 dark:text-gray-300">
+              class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md  dark:bg-gray-700 dark:text-gray-300">
               HTML
             </span>
             <div class="flex justify-center items-center">
-            <img src="dist/img/bar 100 (4).png" alt="" class="w-20">
+            <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+              <div class=" flex items-center justify-center">
+              <img src="dist/img/html.png" alt="" class="w-24">
+              </div>
+              <p class="font-normal pt-1">⭐⭐⭐⭐⭐</p>
+            </a>
             </div>
             <h3 class="text-2xl font-bold leading-tight text-gray-900">
               HTML
             </h3>
             <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Flowbite 
             </p>
           </div>
     
@@ -197,13 +205,18 @@
               CSS
             </span>
             <div class="flex justify-center items-center">
-              <img src="dist/img/bar 75.png" alt="" class="w-20">
-              </div>
+              <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+                <div class=" flex items-center justify-center">
+                <img src="dist/img/css.png" alt="" class="w-24">
+                </div>
+                <p class="font-normal pt-2">⭐⭐⭐⭐</p>
+              </a>
+            </div>
             <h3 class="text-2xl font-bold leading-tight text-gray-900">
               Cascading Style Sheet
             </h3>
             <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Flowbite 
             </p>
           </div>
     
@@ -213,13 +226,18 @@
               Javascript.
             </span>
             <div class="flex justify-center items-center">
-              <img src="dist/img/bar 50.png" alt="" class="w-20">
+              <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+                <div class=" flex items-center justify-center">
+                <img src="dist/img/js.png" alt="" class="w-24">
+                </div>
+                <p class="font-normal pt-2">⭐⭐⭐</p>
+              </a>
               </div>
             <h3 class="text-2xl font-bold leading-tight text-gray-900">
               Javascript
             </h3>
             <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Flowbite 
             </p>
           </div>
 
@@ -229,13 +247,18 @@
               Bootstrap.
             </span>
             <div class="flex justify-center items-center">
-              <img src="dist/img/bar 75.png" alt="" class="w-20">
+              <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+                <div class=" flex items-center justify-center">
+                <img src="dist/img/bootstrap.png" alt="" class="w-24">
+                </div>
+                <p class="font-normal pt-2">⭐⭐⭐⭐</p>
+              </a>
               </div>
             <h3 class="text-2xl font-bold leading-tight text-gray-900">
               Bootstrap
             </h3>
             <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Flowbite 
             </p>
           </div>
           
@@ -245,13 +268,18 @@
               Tailwind.
             </span>
             <div class="flex justify-center items-center">
-              <img src="dist/img/bar 75.png" alt="" class="w-20">
+              <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+                <div class=" flex items-center justify-center">
+                <img src="dist/img/tailwind.png" alt="" class="w-20 object-scale-down">
+                </div>
+                <p class="font-normal pt-4">⭐⭐⭐⭐</p>
+              </a>
               </div>
             <h3 class="text-2xl font-bold leading-tight text-gray-900">
               Tailwind
             </h3>
             <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Flowbite 
             </p>
           </div>
 
@@ -261,13 +289,18 @@
               Vue.
             </span>
             <div class="flex justify-center items-center">
-              <img src="dist/img/bar 25.png" alt="" class="w-20">
+              <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+                <div class=" flex items-center justify-center">
+                <img src="dist/img/vue1.png" alt="" class="w-24">
+                </div>
+                <p class="font-normal pt-2">⭐⭐</p>
+              </a>
               </div>
             <h3 class="text-2xl font-bold leading-tight text-gray-900">
               Vue
             </h3>
             <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
-              Flowbite helps you connect with friends, family and communities of people who share your interests.
+              Flowbite 
             </p>
           </div>
         </div>
@@ -279,7 +312,6 @@
     <!-- Portofolio Section -->
     <section id="portofolio" class="bg-slate-100 pt-36 pb-16">
         <div class="container">
-          <div class="w-full px-4" data-aos="fade-up">
             <div class="mx-auto mb-16 max-w-xl text-center">
               <h4 class="mb-2 text-lg font-semibold text-orange-400">PORTOFOLIO</h4>
               <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">Project Terbaru</h2>
@@ -323,51 +355,50 @@
       </section>
     <!-- End Portofolio -->
   
-      <!-- Blog Section Start -->
+      <!-- Sertificate Section Start -->
       <section id="blog" class="bg-slate-100 pt-36 pb-32">
         <div class="container">
           <div class="w-full px-4">
             <div class="mx-auto mb-16 max-w-xl text-center" data-aos="zoom-out-up">
-              <h4 class="mb-2 text-lg font-semibold text-orange-400">BLOG</h4>
-              <h2 class="mb-4 text-3xl font-bold text-darksm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
+              <h4 class="mb-2 text-lg font-semibold text-orange-400">Sertificate</h4>
+              <h2 class="mb-4 text-3xl font-bold text-darksm:text-4xl lg:text-5xl">Achievement</h2>
               <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam perspiciatis blanditiis dolores?</p>
             </div>
           </div>
   
-          <div class="flex flex-wrap">
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-out-right">
+          <div class="flex flex-wrap group">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 cursor-pointer duration-500 group-hover:-[0.85] hover:!scale-100" data-aos="zoom-out-right">
               <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
-                <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full" />
+                <img src="dist/img/sertif backend.png" alt="Programming" class="w-full" />
                 <div class="py-8 px-6">
                   <h3>
-                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-orange-400">Tips Belajar Programming</a>
+                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-orange-400">Sertificate Backend Developer</a>
                   </h3>
                   <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat officia beatae quisquam?</p>
-                  <a href="#" class="rounded-lg bg-orange-400 py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                 
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-out-right">
-              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 cursor-pointer duration-500 group-hover:-[0.85] hover:!scale-100" data-aos="zoom-out-right">
+              <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg ">
                 <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="Mechanical Keyboard" class="w-full" />
                 <div class="py-8 px-6">
                   <h3>
-                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-orange-400">Review Keyboard GMMK Pro</a>
+                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-orange-400">Sertificate Front-End Developer</a>
                   </h3>
                   <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi facilis illum in.</p>
-                  <a href="#" class="rounded-lg bg-orange-400 py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                 
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" data-aos="zoom-out-right">
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 cursor-pointer duration-500 group-hover:-[0.85] hover:!scale-100" data-aos="zoom-out-right">
               <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
                 <img src="https://source.unsplash.com/360x200?coffee" alt="Coffee" class="w-full" />
                 <div class="py-8 px-6">
                   <h3>
-                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-orange-400">Menikmati Secangkir Kopi</a>
+                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-orange-400">Sertificate UI/UX</a>
                   </h3>
-                  <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, totam ipsum ea quam sequi velit sunt.</p>
-                  <a href="#" class="rounded-lg bg-orange-400 py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                  <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
               </div>
             </div>
@@ -525,7 +556,7 @@
               </a>
             </div>
             <p class="text-center text-xs font-medium text-slate-500">
-              Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="https://www.instagram.com/muhamad_daffa_malik/" target="_blank" class="font-bold text-orange-400">Muhammad Daffa</a>, menggunakan
+              Dibuat dengan <span class="text-pink-500"></span> oleh <a href="https://www.instagram.com/muhamad_daffa_malik/" target="_blank" class="font-bold text-orange-400">Muhammad Daffa</a>, menggunakan
               <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
             </p>
           </div>
@@ -542,6 +573,8 @@
 
     <script src="dist/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/src/typed.umd.js"></script>
+    <script src="dist/js/textanimation.js" ></script>
     <script>
         AOS.init();
       </script>
